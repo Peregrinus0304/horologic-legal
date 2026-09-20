@@ -10,6 +10,6 @@ Public Privacy Policy, Terms of Use, and Support for the TickLog iOS app.
 - https://peregrinus0304.github.io/ticklog-legal/terms.html
 - https://peregrinus0304.github.io/ticklog-legal/support.html
 
-Contact: support@ticklog.app
+Contact: ticklog.support@dontsp.am
 
 Same layout as [nyxora-legal](https://github.com/Peregrinus0304/nyxora-legal): static HTML on `main`, GitHub Pages from `/`.

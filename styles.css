@@ -1,0 +1,115 @@
+:root {
+  --bg: #0d121c;
+  --surface: #161b26;
+  --text: #e8eef6;
+  --muted: #8b97a8;
+  --accent: #9ec7eb;
+  --line: rgba(158, 199, 235, 0.18);
+  --max: 40rem;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: dark; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(158, 199, 235, 0.14), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.brand {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+
+.lede {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+ul { padding-left: 1.2rem; }
+li + li { margin-top: 0.35rem; }
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+a:hover { color: #c5dff5; }
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.links li { margin: 0; }
+
+.links a {
+  display: block;
+  padding: 1rem 1.1rem;
+  margin-bottom: 0.65rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.links a:hover { border-color: rgba(158, 199, 235, 0.5); }
+
+.meta {
+  margin-top: 2.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 2rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
